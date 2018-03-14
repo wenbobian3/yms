@@ -16,7 +16,6 @@
         setTimeout(function(){
           that.$router.push('/home')
         },4000)
-        // console.log(1)
       }
     }
 }
@@ -26,10 +25,7 @@
 
 
 <style lang="scss">
-$width: red;
-body{
-  color:$width;
-}
+
 #app {
   width:100%;
   text-align: center;
