@@ -28,6 +28,8 @@ import hotel from './hotel.vue'
 .cheap{
     height:2.98rem;
     width:100%;
+    border-bottom:0.08rem solid #ccc;
+    
     .cheap-wz{
         height:0.58rem;
         width:100%;
