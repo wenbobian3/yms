@@ -1,12 +1,16 @@
 <template>
   <div class="hotel">
+      
       <div class="hotel-first">
+          
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item v-for="(v,i) in position">
-      <router-link to="/details">
+             
+              <mt-swipe-item v-for="(v,i) in position">
+             <router-link to="/details">
+                  
       <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
- <div class="hotel-span-a">
+        <div class="hotel-span-a">
           <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
       </div>
       <div class="hotel-span-b">
@@ -15,8 +19,10 @@
            <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
-      </router-link>
+             </router-link>
+      
   </mt-swipe-item>
+ 
   <!-- <mt-swipe-item>2</mt-swipe-item>
   <mt-swipe-item>3</mt-swipe-item>
   <mt-swipe-item>4</mt-swipe-item>
@@ -58,10 +64,8 @@
                     // that.$store.commit('setzs',res.data[0].data.zsej)
                     // that.$store.commit('setzz',res.data[0].data)
                     setTimeout(function(){
-                    that.position = that.getmzth
-
-                    console.log(that.getmzth)
-                    },200)
+                    that.position = that.getzsej
+                    },400)
               
                     
                     // console.log(this.mapState )

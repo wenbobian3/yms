@@ -7,12 +7,14 @@ import Vuex from 'vuex';
 Vue.use(Vuex)
 const mapGetters = Vuex.mapGetters
 const mapMutations = Vuex.mapMutations
+const mapState = Vuex.mapState
 
 const store = new Vuex.Store({
         state: {
             mzth: [],
             wydd: [],
-            zsej: []
+            zsej: [],
+            zz: []
         },
 
         mutations: {
@@ -25,7 +27,12 @@ const store = new Vuex.Store({
             },
             setzs(state, payload) {
                 state.zsej = payload
+            },
+            setzz(state, payload) {
+                state.zz = payload
+
             }
+
         },
         getters: {
             getmzth(state) {
@@ -36,6 +43,9 @@ const store = new Vuex.Store({
             },
             getzsej(state) {
                 return state.zsej
+            },
+            getzz(state) {
+                return state.zz
             }
         }
         // ,
