@@ -3,23 +3,22 @@
       <div class="hotel-first">
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item>
-      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg" alt="">
+  <mt-swipe-item v-for="(v,i) in position">
+      <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
  <div class="hotel-span-a">
-          <h3>￥</h3><h3>530</h3><h4>起</h4>
+          <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
       </div>
       <div class="hotel-span-b">
-          <h3>春秋舍</h3>
+          <h3>{{v.name}}</h3>
           <div class="hotel-div">
-           <h3 class="hotel-h3-a">西安</h3> <h3 class="hotel-h3-b">文艺社</h3>
+           <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
-
   </mt-swipe-item>
-  <mt-swipe-item>2</mt-swipe-item>
+  <!-- <mt-swipe-item>2</mt-swipe-item>
   <mt-swipe-item>3</mt-swipe-item>
   <mt-swipe-item>4</mt-swipe-item>
-  <mt-swipe-item>5</mt-swipe-item>
+  <mt-swipe-item>5</mt-swipe-item> -->
 </mt-swipe>
       </div>
      
@@ -27,6 +26,46 @@
      
   </div>
 </template>
+
+<script>
+    
+    import axios from 'axios'
+    import vuex from 'vuex'
+    import {mapGetters} from 'vuex'
+    export default {
+        data(){
+            return {
+                position:[]
+            }
+        },
+        computed:{
+            ...mapGetters([
+                'getmzth',
+                'getwydd',
+                'getzsej'
+            ])
+        },
+        methods:{
+            add(){
+                const that=this
+                axios.get('/api/posts')
+                 .then(function(res){
+                    that.$store.commit('setCount',res.data[0].data.mzth)
+                    that.$store.commit('setWy',res.data[0].data.wydd)
+                    that.$store.commit('setzs',res.data[0].data.zsej)
+                    console.log(that.$store)
+                    console.log(that.getmzth)
+                    that.position = that.getmzth
+                 })
+            }
+        },
+        mounted(){
+                 this.add()
+        }
+    }
+
+</script> 
+
 <style lang="scss">
 .hotel{
     height:2.3rem;
