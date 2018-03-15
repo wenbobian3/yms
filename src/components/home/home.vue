@@ -2,14 +2,14 @@
   <div>
       <header-component></header-component>
       <main>
-      <cheap></cheap>
-      <cheap></cheap>
-      <cheap></cheap>
-      <cheap></cheap>
-      <cheap></cheap>
-      <cheap></cheap>
-      <story></story>
-<activity></activity>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <story></story>
+        <activity></activity>
       
       </main>
       <footerComponent></footerComponent>
