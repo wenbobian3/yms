@@ -1,0 +1,904 @@
+{
+    "posts": [{
+        "data": {
+            "mzth": [{
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "春秋舍",
+                    "price": "530",
+                    "style": "文艺范",
+                    "area": "西安",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "体验旧建筑改造的民宿",
+                    "describe": "酒店是由废弃车间及苏联旧建筑改造而成，设计完美结合工业旧厂房的沧桑感和现代艺术的时尚感，致力于为追求生活品质且对艺术具有独到见解的客户呈现与众不同的生活态度。   这里的客房面积在38至80平方，房内宽敞舒适，均配有空调、卫星电视、浴缸、国际品牌的洗漱用品及的迷你吧。同时，酒店提供无线WiFi及停车场，配备娱乐室（KTV,台球,飞镖等）和会议室；还可安排接机和送机服务、西安室内的包车服务以及市内旅游服务。",
+                    "room": [{
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "标准大床房",
+                            "usual": "450",
+                            "original": "530",
+                            "weekend": "530",
+                            "holiday": "530"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "精品大床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+
+                            "houselayout": "精品双床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "豪华房",
+                            "usual": "560",
+                            "original": "630",
+                            "weekend": "630",
+                            "holiday": "630"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "复式套房",
+                            "usual": "1200",
+                            "original": "1500",
+                            "weekend": "1500",
+                            "holiday": "1500"
+                        }
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "沂蒙山舍",
+                    "price": "1180",
+                    "style": "田园风",
+                    "area": "临沂",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "山里的美非亲临无以查",
+                    "describe": "沂蒙山舍位于临沂蒙山旅游度假区蒙山人家景区内，一期共有14间客房，有豪华山景套房、山景舒适大床房、独立『庭院标间、厢林园等多种房型。推开门另有一番天地，庭院古木参天，淡淡槐花香随风飘来。这里依山而建，院内景色与山景相衬相融。初夏的蒙山天朗气清，山谷氤氲在一片清爽中。满目的葱茏将心中的烦闷一一净化，只想在这山里慵懒一段时光，享受一片宁静。无论客厅、休息区，房间的每个角落都充满自然和谐的气息。最惬意的是置身自然，拥抱自然，无限风光尽在眼前。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "观云院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "听瀑院（双人床）",
+                            "usual": "1010",
+                            "original": "1188",
+                            "weekend": "1188",
+                            "holiday": "1188"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "忘怀院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "自在院（双人床）",
+                            "usual": "1010",
+                            "original": "1180",
+                            "weekend": "1180",
+                            "holiday": "1180"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "依山院（双人床）",
+                            "usual": "1860",
+                            "original": "2188",
+                            "weekend": "2188",
+                            "holiday": "2188"
+                        }
+
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "山己小院",
+                    "price": "2199",
+                    "style": "田园风",
+                    "area": "怀柔",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "去山己小院看一看",
+                    "describe": "离开喧嚣的北京城 栖居在雁栖湖与红螺寺之间的山己小院 蓝天里的玻璃屋 枣树下的秋千架 清晨砌一杯香茶 与三五好友聊聊天 让你在不偏僻的地方静下来!    房屋描述:整院包括内庭院,可烧烤的外院,花园,玻璃房,开放式自助厨房餐厅(可代请私人厨师，可点附近餐馆菜品送至小院),各式风格卧室,可打麻将可下棋，附近500米有水库可垂钓。    地理位置:近APEC国际会展中心,电影节举办地,在红螺寺红螺湖生存岛雁栖湖的中间(5分钟车程),去慕田峪长城也只需15分钟车程,附近有水库可免费垂钓",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1759",
+                        "original": "2699",
+                        "weekend": "2699",
+                        "holiday": "2699"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "青山明月居",
+                    "price": "1264",
+                    "style": "田园风",
+                    "area": "密云",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "坐拥青山 洗心月明",
+                    "describe": " 到青山明月居看看   一颗逃离城市的心，住进了一座有着三百年历史的老房子。坐落在长城脚下。这里紧邻香草园司马台长城、金山岭长城、卧虎山长城、盘龙山长城、杨令公庙、药王庙等自然和人文景区。   这里交通便利、四面环山、 环境清新自然，热情好客的小院主人、天然可口的农家饭、温馨舒适的住宿环境，都可以让您休会到小院独有的风格，尽情享受宁静的田园生活。 ",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1265",
+                        "original": "1580",
+                        "weekend": "1580",
+                        "holiday": "1580"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "山水间微酒店",
+                    "price": "288",
+                    "style": "温暖系",
+                    "area": "黄山",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "无拘无束，如家感觉",
+                    "describe": "黄山山水间微酒店位于国家4A景区湖边古村落内，面临新安江，风景秀丽，酒店共有9间客房，分别由9位亚洲知名设计师设计，风格迥异，是黄山首家设计型酒店。所有房间配有五星级标准的床上用品以及洗漱用品，拥有先进的网络电视，地暖空调，中央热水，无线WIFI,以及宽敞浴室。酒店拥有一个极具特色的咖啡红酒吧。住进山水间的五大欢喜：第一喜、来到湖边古村落就被这里的建筑、环境所吸引心生欢喜；第二喜、进入设计精品客栈就被空间吸引感动，移步换景，满心欢喜；第三喜、步入大厅，心情一下变的柔软了，坐在兼具红酒吧、茶吧、与书吧功能的厅中，眼前青山绿水，醉人美景，此刻放下行囊，找个位置坐下，可小酌、可品茗，亦可无忧读书，不胜欢喜；第四喜、隨客栈管家上楼，回到房间，开门瞬间赞叹不已，不同风格的装饰，简单且个性十足，功能配套齐全的洗漱间，舒适的床......，推开窗户，近水楼台，和风拂面，神清气爽，烦忧尽消，自然欢喜；第五喜、住在这里，想吃就吃，想喝就喝，想玩就玩，想睡就睡，无拘无束，如家感觉，不舍离去，真是欢喜。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大易",
+                            "usual": "520",
+                            "original": "650",
+                            "weekend": "545",
+                            "w-original": "680",
+                            "holiday": "680"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大隐",
+                            "usual": "577",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "二居坊",
+                            "usual": "760",
+                            "original": "950",
+                            "weekend": "865",
+                            "w-original": "1080",
+                            "holiday": "1080"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "翰度",
+                            "usual": "288",
+                            "original": "360",
+                            "weekend": "305",
+                            "w-original": "380",
+                            "holiday": "380"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "胜异",
+                            "usual": "305",
+                            "original": "380",
+                            "weekend": "336",
+                            "w-original": "420",
+                            "holiday": "420"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "又新",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "中柏",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        }
+                    ]
+                }
+            ],
+
+            "zsej": [
+
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "水岸寒舍",
+                    "price": "1688",
+                    "style": "轻奢派",
+                    "area": "黎里",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "体验旧建筑改造的民宿",
+                    "describe": "酒店是由废弃车间及苏联旧建筑改造而成，设计完美结合工业旧厂房的沧桑感和现代艺术的时尚感，致力于为追求生活品质且对艺术具有独到见解的客户呈现与众不同的生活态度。   这里的客房面积在38至80平方，房内宽敞舒适，均配有空调、卫星电视、浴缸、国际品牌的洗漱用品及的迷你吧。同时，酒店提供无线WiFi及停车场，配备娱乐室（KTV,台球,飞镖等）和会议室；还可安排接机和送机服务、西安室内的包车服务以及市内旅游服务。",
+                    "room": [{
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "标准大床房",
+                            "usual": "450",
+                            "original": "530",
+                            "weekend": "530",
+                            "holiday": "530"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "精品大床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+
+                            "houselayout": "精品双床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "豪华房",
+                            "usual": "560",
+                            "original": "630",
+                            "weekend": "630",
+                            "holiday": "630"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "复式套房",
+                            "usual": "1200",
+                            "original": "1500",
+                            "weekend": "1500",
+                            "holiday": "1500"
+                        }
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "太湖白鹭",
+                    "price": "650",
+                    "style": "文艺范",
+                    "area": "苏州",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "山里的美非亲临无以查",
+                    "describe": "沂蒙山舍位于临沂蒙山旅游度假区蒙山人家景区内，一期共有14间客房，有豪华山景套房、山景舒适大床房、独立『庭院标间、厢林园等多种房型。推开门另有一番天地，庭院古木参天，淡淡槐花香随风飘来。这里依山而建，院内景色与山景相衬相融。初夏的蒙山天朗气清，山谷氤氲在一片清爽中。满目的葱茏将心中的烦闷一一净化，只想在这山里慵懒一段时光，享受一片宁静。无论客厅、休息区，房间的每个角落都充满自然和谐的气息。最惬意的是置身自然，拥抱自然，无限风光尽在眼前。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "观云院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "听瀑院（双人床）",
+                            "usual": "1010",
+                            "original": "1188",
+                            "weekend": "1188",
+                            "holiday": "1188"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "忘怀院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "自在院（双人床）",
+                            "usual": "1010",
+                            "original": "1180",
+                            "weekend": "1180",
+                            "holiday": "1180"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "依山院（双人床）",
+                            "usual": "1860",
+                            "original": "2188",
+                            "weekend": "2188",
+                            "holiday": "2188"
+                        }
+
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "瓦蓝·惜夕湾",
+                    "price": "650",
+                    "style": "文艺范",
+                    "area": "大理",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "去山己小院看一看",
+                    "describe": "离开喧嚣的北京城 栖居在雁栖湖与红螺寺之间的山己小院 蓝天里的玻璃屋 枣树下的秋千架 清晨砌一杯香茶 与三五好友聊聊天 让你在不偏僻的地方静下来!    房屋描述:整院包括内庭院,可烧烤的外院,花园,玻璃房,开放式自助厨房餐厅(可代请私人厨师，可点附近餐馆菜品送至小院),各式风格卧室,可打麻将可下棋，附近500米有水库可垂钓。    地理位置:近APEC国际会展中心,电影节举办地,在红螺寺红螺湖生存岛雁栖湖的中间(5分钟车程),去慕田峪长城也只需15分钟车程,附近有水库可免费垂钓",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1759",
+                        "original": "2699",
+                        "weekend": "2699",
+                        "holiday": "2699"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "一水间",
+                    "price": "650",
+                    "style": "田园风",
+                    "area": "金华",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "坐拥青山 洗心月明",
+                    "describe": " 到青山明月居看看   一颗逃离城市的心，住进了一座有着三百年历史的老房子。坐落在长城脚下。这里紧邻香草园司马台长城、金山岭长城、卧虎山长城、盘龙山长城、杨令公庙、药王庙等自然和人文景区。   这里交通便利、四面环山、 环境清新自然，热情好客的小院主人、天然可口的农家饭、温馨舒适的住宿环境，都可以让您休会到小院独有的风格，尽情享受宁静的田园生活。 ",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1265",
+                        "original": "1580",
+                        "weekend": "1580",
+                        "holiday": "1580"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "水岸私塾",
+                    "price": "480",
+                    "style": "文艺范",
+                    "area": "桐庐",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "无拘无束，如家感觉",
+                    "describe": "黄山山水间微酒店位于国家4A景区湖边古村落内，面临新安江，风景秀丽，酒店共有9间客房，分别由9位亚洲知名设计师设计，风格迥异，是黄山首家设计型酒店。所有房间配有五星级标准的床上用品以及洗漱用品，拥有先进的网络电视，地暖空调，中央热水，无线WIFI,以及宽敞浴室。酒店拥有一个极具特色的咖啡红酒吧。住进山水间的五大欢喜：第一喜、来到湖边古村落就被这里的建筑、环境所吸引心生欢喜；第二喜、进入设计精品客栈就被空间吸引感动，移步换景，满心欢喜；第三喜、步入大厅，心情一下变的柔软了，坐在兼具红酒吧、茶吧、与书吧功能的厅中，眼前青山绿水，醉人美景，此刻放下行囊，找个位置坐下，可小酌、可品茗，亦可无忧读书，不胜欢喜；第四喜、隨客栈管家上楼，回到房间，开门瞬间赞叹不已，不同风格的装饰，简单且个性十足，功能配套齐全的洗漱间，舒适的床......，推开窗户，近水楼台，和风拂面，神清气爽，烦忧尽消，自然欢喜；第五喜、住在这里，想吃就吃，想喝就喝，想玩就玩，想睡就睡，无拘无束，如家感觉，不舍离去，真是欢喜。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大易",
+                            "usual": "520",
+                            "original": "650",
+                            "weekend": "545",
+                            "w-original": "680",
+                            "holiday": "680"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大隐",
+                            "usual": "577",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "二居坊",
+                            "usual": "760",
+                            "original": "950",
+                            "weekend": "865",
+                            "w-original": "1080",
+                            "holiday": "1080"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "翰度",
+                            "usual": "288",
+                            "original": "360",
+                            "weekend": "305",
+                            "w-original": "380",
+                            "holiday": "380"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "胜异",
+                            "usual": "305",
+                            "original": "380",
+                            "weekend": "336",
+                            "w-original": "420",
+                            "holiday": "420"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "又新",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "中柏",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        }
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "龙门绿水山庄",
+                    "price": "328",
+                    "style": "田园风",
+                    "area": "丽水",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "坐拥青山 洗心月明",
+                    "describe": " 到青山明月居看看   一颗逃离城市的心，住进了一座有着三百年历史的老房子。坐落在长城脚下。这里紧邻香草园司马台长城、金山岭长城、卧虎山长城、盘龙山长城、杨令公庙、药王庙等自然和人文景区。   这里交通便利、四面环山、 环境清新自然，热情好客的小院主人、天然可口的农家饭、温馨舒适的住宿环境，都可以让您休会到小院独有的风格，尽情享受宁静的田园生活。 ",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1265",
+                        "original": "1580",
+                        "weekend": "1580",
+                        "holiday": "1580"
+                    }]
+                }
+            ],
+            "wydd": [
+
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "岩朵",
+                    "price": "650",
+                    "style": "文艺范",
+                    "area": "桐庐",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "体验旧建筑改造的民宿",
+                    "describe": "酒店是由废弃车间及苏联旧建筑改造而成，设计完美结合工业旧厂房的沧桑感和现代艺术的时尚感，致力于为追求生活品质且对艺术具有独到见解的客户呈现与众不同的生活态度。   这里的客房面积在38至80平方，房内宽敞舒适，均配有空调、卫星电视、浴缸、国际品牌的洗漱用品及的迷你吧。同时，酒店提供无线WiFi及停车场，配备娱乐室（KTV,台球,飞镖等）和会议室；还可安排接机和送机服务、西安室内的包车服务以及市内旅游服务。",
+                    "room": [{
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "标准大床房",
+                            "usual": "450",
+                            "original": "530",
+                            "weekend": "530",
+                            "holiday": "530"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "精品大床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+
+                            "houselayout": "精品双床",
+                            "usual": "500",
+                            "original": "560",
+                            "weekend": "560",
+                            "holiday": "560"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "豪华房",
+                            "usual": "560",
+                            "original": "630",
+                            "weekend": "630",
+                            "holiday": "630"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "复式套房",
+                            "usual": "1200",
+                            "original": "1500",
+                            "weekend": "1500",
+                            "holiday": "1500"
+                        }
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "喜林苑",
+                    "price": "980",
+                    "style": "文艺范",
+                    "area": "大理",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "山里的美非亲临无以查",
+                    "describe": "沂蒙山舍位于临沂蒙山旅游度假区蒙山人家景区内，一期共有14间客房，有豪华山景套房、山景舒适大床房、独立『庭院标间、厢林园等多种房型。推开门另有一番天地，庭院古木参天，淡淡槐花香随风飘来。这里依山而建，院内景色与山景相衬相融。初夏的蒙山天朗气清，山谷氤氲在一片清爽中。满目的葱茏将心中的烦闷一一净化，只想在这山里慵懒一段时光，享受一片宁静。无论客厅、休息区，房间的每个角落都充满自然和谐的气息。最惬意的是置身自然，拥抱自然，无限风光尽在眼前。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "观云院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "听瀑院（双人床）",
+                            "usual": "1010",
+                            "original": "1188",
+                            "weekend": "1188",
+                            "holiday": "1188"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "忘怀院（双人床）",
+                            "usual": "1435",
+                            "original": "1688",
+                            "weekend": "1688",
+                            "holiday": "1688"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "自在院（双人床）",
+                            "usual": "1010",
+                            "original": "1180",
+                            "weekend": "1180",
+                            "holiday": "1180"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+
+                            "houselayout": "依山院（双人床）",
+                            "usual": "1860",
+                            "original": "2188",
+                            "weekend": "2188",
+                            "holiday": "2188"
+                        }
+
+
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "肯派陈静家",
+                    "price": "298",
+                    "style": "田园风",
+                    "area": "成都",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "去山己小院看一看",
+                    "describe": "离开喧嚣的北京城 栖居在雁栖湖与红螺寺之间的山己小院 蓝天里的玻璃屋 枣树下的秋千架 清晨砌一杯香茶 与三五好友聊聊天 让你在不偏僻的地方静下来!    房屋描述:整院包括内庭院,可烧烤的外院,花园,玻璃房,开放式自助厨房餐厅(可代请私人厨师，可点附近餐馆菜品送至小院),各式风格卧室,可打麻将可下棋，附近500米有水库可垂钓。    地理位置:近APEC国际会展中心,电影节举办地,在红螺寺红螺湖生存岛雁栖湖的中间(5分钟车程),去慕田峪长城也只需15分钟车程,附近有水库可免费垂钓",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1759",
+                        "original": "2699",
+                        "weekend": "2699",
+                        "holiday": "2699"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "白云禅院",
+                    "price": "680",
+                    "style": "文艺范",
+                    "area": "徽州",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "坐拥青山 洗心月明",
+                    "describe": " 到青山明月居看看   一颗逃离城市的心，住进了一座有着三百年历史的老房子。坐落在长城脚下。这里紧邻香草园司马台长城、金山岭长城、卧虎山长城、盘龙山长城、杨令公庙、药王庙等自然和人文景区。   这里交通便利、四面环山、 环境清新自然，热情好客的小院主人、天然可口的农家饭、温馨舒适的住宿环境，都可以让您休会到小院独有的风格，尽情享受宁静的田园生活。 ",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1265",
+                        "original": "1580",
+                        "weekend": "1580",
+                        "holiday": "1580"
+                    }]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "乐活美宿",
+                    "price": "1175",
+                    "style": "文艺范",
+                    "area": "青岛",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "无拘无束，如家感觉",
+                    "describe": "黄山山水间微酒店位于国家4A景区湖边古村落内，面临新安江，风景秀丽，酒店共有9间客房，分别由9位亚洲知名设计师设计，风格迥异，是黄山首家设计型酒店。所有房间配有五星级标准的床上用品以及洗漱用品，拥有先进的网络电视，地暖空调，中央热水，无线WIFI,以及宽敞浴室。酒店拥有一个极具特色的咖啡红酒吧。住进山水间的五大欢喜：第一喜、来到湖边古村落就被这里的建筑、环境所吸引心生欢喜；第二喜、进入设计精品客栈就被空间吸引感动，移步换景，满心欢喜；第三喜、步入大厅，心情一下变的柔软了，坐在兼具红酒吧、茶吧、与书吧功能的厅中，眼前青山绿水，醉人美景，此刻放下行囊，找个位置坐下，可小酌、可品茗，亦可无忧读书，不胜欢喜；第四喜、隨客栈管家上楼，回到房间，开门瞬间赞叹不已，不同风格的装饰，简单且个性十足，功能配套齐全的洗漱间，舒适的床......，推开窗户，近水楼台，和风拂面，神清气爽，烦忧尽消，自然欢喜；第五喜、住在这里，想吃就吃，想喝就喝，想玩就玩，想睡就睡，无拘无束，如家感觉，不舍离去，真是欢喜。",
+                    "room": [{
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大易",
+                            "usual": "520",
+                            "original": "650",
+                            "weekend": "545",
+                            "w-original": "680",
+                            "holiday": "680"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "大隐",
+                            "usual": "577",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "二居坊",
+                            "usual": "760",
+                            "original": "950",
+                            "weekend": "865",
+                            "w-original": "1080",
+                            "holiday": "1080"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "翰度",
+                            "usual": "288",
+                            "original": "360",
+                            "weekend": "305",
+                            "w-original": "380",
+                            "holiday": "380"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "胜异",
+                            "usual": "305",
+                            "original": "380",
+                            "weekend": "336",
+                            "w-original": "420",
+                            "holiday": "420"
+                        },
+                        {
+                            "houseImg": [
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg",
+                                "xxxxxxx.jpg"
+                            ],
+                            "houselayout": "又新",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        },
+                        {
+                            "houseImg": "xxxxxxx.jpg",
+                            "houselayout": "中柏",
+                            "usual": "576",
+                            "original": "720",
+                            "weekend": "625",
+                            "w-original": "780",
+                            "holiday": "780"
+                        }
+                    ]
+                },
+                {
+                    "imgUrl": "xxxxxxx.jpg",
+                    "name": "知谷",
+                    "price": "780",
+                    "style": "文艺范",
+                    "area": "密云",
+                    "dImgUrl": [
+                        "xxxxx.jpg",
+                        "xxxxx.jpg",
+                        "xxxxx.jpg"
+                    ],
+                    "title": "坐拥青山 洗心月明",
+                    "describe": " 到青山明月居看看   一颗逃离城市的心，住进了一座有着三百年历史的老房子。坐落在长城脚下。这里紧邻香草园司马台长城、金山岭长城、卧虎山长城、盘龙山长城、杨令公庙、药王庙等自然和人文景区。   这里交通便利、四面环山、 环境清新自然，热情好客的小院主人、天然可口的农家饭、温馨舒适的住宿环境，都可以让您休会到小院独有的风格，尽情享受宁静的田园生活。 ",
+                    "room": [{
+                        "houseImg": [
+                            "xxxxx.jpg",
+                            "xxxxx.jpg",
+                            "xxxxx.jpg"
+                        ],
+                        "houselayout": "整租",
+                        "usual": "1265",
+                        "original": "1580",
+                        "weekend": "1580",
+                        "holiday": "1580"
+                    }]
+                }
+            ]
+        }
+    }],
+    "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+}
