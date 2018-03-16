@@ -58,10 +58,8 @@
                     // that.$store.commit('setzs',res.data[0].data.zsej)
                     // that.$store.commit('setzz',res.data[0].data)
                     setTimeout(function(){
-                    that.position = that.getmzth
-
-                    console.log(that.getmzth)
-                    },200)
+                    that.position = that.getwydd
+                    },400)
               
                     
                     // console.log(this.mapState )

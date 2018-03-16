@@ -5,6 +5,7 @@ import anmimte from '../components/home/anmimte.vue'
 import find from '../components/find/find.vue'
 import story from '../components/story/story.vue'
 import personal from '../components/personal/personal.vue'
+import details from '../components/better/details.vue'
 
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
         }, {
             path: '/personal',
             component: personal
+        },
+        {
+            path: '/details',
+            component: details
         }
     ]
 })
