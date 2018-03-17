@@ -2,6 +2,7 @@
   <div>
       <header-component></header-component>
       <main>
+<!-- <<<<<<< HEAD -->
       <cheap></cheap>
       <water></water>
       <liter></liter>
@@ -10,6 +11,16 @@
       <cheap></cheap>
       <story></story>
 <activity></activity>
+<!-- ======= -->
+        <!-- <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <cheap></cheap>
+        <story></story>
+        <activity></activity> -->
+<!-- >>>>>>> remotes/orange/wzx -->
       
       </main>
       <footerComponent></footerComponent>

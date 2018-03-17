@@ -1,15 +1,15 @@
 <template>
-<div class="no1">
-    <transition appear   appear-class="custom-appear-class">
-  <img src="/static/image/yms.png" alt="" class="yms1" transition="expand">
-    </transition>
-      </div>
+  <div class="no1">
+      <transition appear   appear-class="custom-appear-class">
+        <img src="/static/image/yms.png" alt="" class="yms1" transition="expand">
+      </transition>
+  </div>
 </template>
 <script>
 
   export default {
-        mounted(){
-       this.add()
+      mounted(){
+      this.add()
     },
     methods:{
       add(){

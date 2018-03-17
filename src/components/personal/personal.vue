@@ -1,6 +1,6 @@
 <template>
   <div>
-      personal
+      per
       <footerComponent></footerComponent>
   </div>
 </template>
