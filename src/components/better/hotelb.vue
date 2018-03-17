@@ -6,7 +6,7 @@
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
              
-              <mt-swipe-item v-for="(v,i) in position">
+              <mt-swipe-item   v-for="(v,index) in position"  :key="index" >
              <router-link to="/details">
                   
       <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
@@ -23,10 +23,7 @@
       
   </mt-swipe-item>
  
-  <!-- <mt-swipe-item>2</mt-swipe-item>
-  <mt-swipe-item>3</mt-swipe-item>
-  <mt-swipe-item>4</mt-swipe-item>
-  <mt-swipe-item>5</mt-swipe-item> -->
+
 </mt-swipe>
       </div>
      

@@ -3,8 +3,8 @@
       <div class="hotel-first">
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item v-for="(v,i) in position">
-      <router-link to="/details">
+                <mt-swipe-item  v-for="(v,index) in position"  :key="index">
+      <router-link to="/details" tag="div">
       <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
  <div class="hotel-span-a">
           <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
@@ -25,18 +25,17 @@
       </div>
      
       </div>
-     
   </div>
 </template>
 
 <script>
-    
+
     import axios from 'axios'
     // import vuex from 'vuex'
     import {mapGetters} from 'vuex'
     export default {
-        data(){
-            return {
+        data:function(){
+            return{
                 position:[]
             }
         },
@@ -59,9 +58,7 @@
                     // that.$store.commit('setzz',res.data[0].data)
                     setTimeout(function(){
                     that.position = that.getmzth
-
-                    console.log(that.getmzth)
-                    },200)
+                    },500)
               
                     
                     // console.log(this.mapState )
