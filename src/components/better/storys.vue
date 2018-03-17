@@ -1,5 +1,5 @@
 <template>
-        <div class="story-q">
+        <div class="ui-border-b story-q">
             <div class="story-img">
           <img src="../../../static/image/gs.png" alt="">
       </div>

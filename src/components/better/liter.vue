@@ -3,7 +3,7 @@
       <div class="cheap-wz">
         <h2 class="cheap-h2">文艺到底</h2>
         <div>
-            <h3 class="cheap-h3">枕上诗书闲处好，门前风景雨来佳</h3>
+            <h3 class="cheap-h3">枕上诗书闲处好,门前风景雨来佳</h3>
             <div class="cheap-span">
             <h4 class="cheap-span-a">1</h4><h4 class="cheap-span-b"> / 6</h4>
             </div>

@@ -1,16 +1,12 @@
 <template>
   <div class="hotel">
-      
       <div class="hotel-first">
-          
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-             
-              <mt-swipe-item   v-for="(v,index) in position"  :key="index" >
-             <router-link to="/details">
-                  
+  <mt-swipe-item  v-for="(v,index) in position"  :key="index" >
+      <router-link to="/details">
       <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
-        <div class="hotel-span-a">
+ <div class="hotel-span-a">
           <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
       </div>
       <div class="hotel-span-b">
@@ -19,10 +15,8 @@
            <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
-             </router-link>
-      
+      </router-link>
   </mt-swipe-item>
- 
 
 </mt-swipe>
       </div>
@@ -80,16 +74,16 @@
 .hotel{
     height:2.3rem;
     .hotel-first{
-        width:2.84rem;
+        width:99%;
     }
     .hotel-img{
-        width:2.84rem;
+        width:99%;
     height:2.3rem;
         // height:1.65rem;
         border:0.02rem solid rgb(180, 215, 231);
         img{
             height:1.65rem;
-            width:2.84rem;
+            width:99%;
         }
         // .mint-swipe{
         //     overflow: visible;
@@ -121,7 +115,7 @@
         .hotel-div{
             display: flex;
             .hotel-h3-a{
-                width:0.32rem;
+                width:100%;
                 height:0.2rem;
                 border:0.01rem solid #9bac9c;
                 color:#8fb48b;
@@ -132,7 +126,7 @@
                 
             }
             .hotel-h3-b{
-                width:0.46rem;
+                width:100%;
                 height:0.2rem;
                 font-size:0.13rem;
                 text-align:center;

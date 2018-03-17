@@ -1,8 +1,9 @@
 <template>
 <div>
+    
   <div class="details">
       <div class="details-left">
-          <img src="../../../static/image/daohangback.png" alt="">
+            <img src="../../../static/image/daohangback.png" alt="" @click="show">
       </div>
       <div class="details-center">
           民宿详情
@@ -16,7 +17,8 @@
           </div>
       </div>
   </div>
-  <div class="details-banner">
+  <div class="mainn">
+ <div class="details-banner">
       <mt-swipe :show-indicators="false">
         <mt-swipe-item>
       <img src="../../../static/image/my1.png" alt="">
@@ -36,8 +38,8 @@
   <div class="datails-wz">
       <h2>春秋舍</h2>
       <div class="datails-right">
-      <div class="datails-dd">西安</div>
-      <div class="datails-fg">文艺范</div>
+      <div class="datails-dd ui-border">西安</div>
+      <div class="datails-fg ui-border">文艺范</div>
       </div>
 
   </div>
@@ -47,6 +49,8 @@
 
     <information></information>
   </div>
+  </div>
+ 
 </div>
 </template>
 <script>
@@ -54,6 +58,11 @@ import information from './information.vue'
     export default {
         components:{
             information
+        },
+        methods:{
+            show(){
+                this.$router.go(-1)
+            }
         }
     }
 </script>
@@ -67,6 +76,10 @@ import information from './information.vue'
     .details-left{
                     width:0.27rem;
             height:0.27rem;
+            img{
+            background: #f8f8f8;
+
+            }
         img{
             width:100%;
             height: 100%;
@@ -75,7 +88,8 @@ import information from './information.vue'
         }
     }
     .details-center{
-        font-size:0.255rem;
+        font-size:0.17rem;
+        font-weight: 900;
     }
     .details-right{
         width:0.695rem;
@@ -89,16 +103,21 @@ import information from './information.vue'
             height:100%;
         }
         .details-right-left{
-            width:0.23rem;
-            height:0.23rem;
+            width:0.2rem;
+            height:0.2rem;
             margin-right:0.2rem;
         }
         .details-right-right{
-            width:0.23rem;
-            height:0.23rem;
+            width:0.2rem;
+            height:0.2rem;
         }
     }
 
+}
+.mainn{
+    flex: 1;
+    overflow: auto;
+    // flex-wrap: wrap;
 }
 .details-banner{
     height:2.47rem;
@@ -141,7 +160,7 @@ import information from './information.vue'
         .datails-dd{
             width:0.3rem;
             height:0.27rem;
-            border:0.01rem solid #8ac166;
+            border-color:#8ac166;
             color:#80d762;
             font-size:0.13rem;
             text-align: center;
@@ -151,7 +170,7 @@ import information from './information.vue'
          .datails-fg{
             width:0.45rem;
             height:0.28rem;
-            border:0.01rem solid #6dd4b6;
+            border-color:#6dd4b6;
             color:#73e2c2;
             font-size:0.13rem;
             text-align: center;

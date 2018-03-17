@@ -101,10 +101,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 9;
         img{
             display: block;
             width:0.26rem;
             height:0.44rem;
+        z-index: 9;
+            
             }
     }
 }

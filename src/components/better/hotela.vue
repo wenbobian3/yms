@@ -15,6 +15,7 @@
            <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
+      
       </router-link>
   </mt-swipe-item>
 
@@ -74,16 +75,16 @@
 .hotel{
     height:2.3rem;
     .hotel-first{
-        width:2.84rem;
+        width:99%;
     }
     .hotel-img{
-        width:2.84rem;
+        width:99%;
     height:2.3rem;
         // height:1.65rem;
         border:0.02rem solid rgb(180, 215, 231);
         img{
             height:1.65rem;
-            width:2.84rem;
+            width:99%;
         }
         // .mint-swipe{
         //     overflow: visible;
@@ -115,7 +116,7 @@
         .hotel-div{
             display: flex;
             .hotel-h3-a{
-                width:0.32rem;
+                width:100%;
                 height:0.2rem;
                 border:0.01rem solid #9bac9c;
                 color:#8fb48b;
@@ -126,7 +127,7 @@
                 
             }
             .hotel-h3-b{
-                width:0.46rem;
+                width:100%;
                 height:0.2rem;
                 font-size:0.13rem;
                 text-align:center;

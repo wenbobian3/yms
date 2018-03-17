@@ -39,6 +39,9 @@
                 position:[]
             }
         },
+        created(){
+            this.menu()
+        },
         computed:{
             ...mapGetters([
                 'getmzth',
@@ -50,19 +53,12 @@
         methods:{
             add(){
                 const that=this
-                // axios.get('/api/posts')
-                //  .then(function(res){
-                    // that.$store.commit('setCount',res.data[0].data.mzth)
-                    // that.$store.commit('setWy',res.data[0].data.wydd)
-                    // that.$store.commit('setzs',res.data[0].data.zsej)
-                    // that.$store.commit('setzz',res.data[0].data)
                     setTimeout(function(){
                     that.position = that.getmzth
                     },500)
-              
-                    
-                    // console.log(this.mapState )
-                //  })
+            },
+            menu(){
+                window.scrollTo(0,0)
             }
         },
         mounted(){
@@ -76,26 +72,17 @@
 .hotel{
     height:2.3rem;
     .hotel-first{
-        width:2.84rem;
+        width:99%;
     }
     .hotel-img{
-        width:2.84rem;
+        width:99%;
     height:2.3rem;
         // height:1.65rem;
         border:0.02rem solid rgb(180, 215, 231);
         img{
             height:1.65rem;
-            width:2.84rem;
+            width:99%;
         }
-        // .mint-swipe{
-        //     overflow: visible;
-        //     .mint-swipe-items-wrap{
-        //         overflow: visible;
-        //         .mint-swipe-item{
-        //             display: block;
-        //         }
-        //     }
-        // }
     }
     .hotel-span-a{
         display: flex;

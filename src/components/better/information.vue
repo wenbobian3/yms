@@ -2,7 +2,20 @@
     <div class="datails-fj">
           <h3 class="datails-fx-h3-2">房型房价</h3>
           <div  v-for="item in items">
+              <mt-swipe :show-indicators="false">
+  <mt-swipe-item>
           <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
+      
+  </mt-swipe-item>
+  <mt-swipe-item>
+          <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
+      
+  </mt-swipe-item>
+  <mt-swipe-item>
+          <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
+      
+  </mt-swipe-item>
+</mt-swipe>
           <h4 class="datails-fx-h4">房型：标准大床房</h4>
           <div class="datails-jg">
               <div class="best">
@@ -20,10 +33,16 @@
           </div>
           </div>
 
+        <comment></comment>
+        <mapcli></mapcli>
+        <subscribe></subscribe>   
+
       </div>
 </template>
 <script>
-    
+    import comment from './comment.vue'
+    import mapcli from './mapcli.vue'
+    import subscribe from './subscribe.vue'
     export default {
                 data(){
             return {
@@ -35,9 +54,16 @@
                 ]
             }
         },
+        components:{
+            comment,
+            mapcli,
+            subscribe
+        }
     }
 </script>
 <style lang="scss">
+@import "../../frozenui/dist/css/basic.css";
+@import "../../frozenui/dist/css/frozen.css";
 //  .datails-fg{
 //             width:0.45rem;
 //             height:0.28rem;
@@ -67,6 +93,12 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
     }
+    .mint-swipe{
+    width: 3.375rem;
+    height: 2.24rem;
+}
+            
+    
     .datails-fx-h3-2{
         margin-top:0.13rem;
         font-size:0.17rem;
@@ -162,7 +194,6 @@
     }
     
 }
-            
-        // }
+
 
 </style>

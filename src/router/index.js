@@ -6,6 +6,7 @@ import find from '../components/find/find.vue'
 import story from '../components/story/story.vue'
 import personal from '../components/personal/personal.vue'
 import details from '../components/better/details.vue'
+import lookup from '../components/search/lookup.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
         {
             path: '/details',
             component: details
+        },
+        {
+            path: '/search',
+            component: lookup
         }
     ]
 })
