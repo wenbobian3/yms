@@ -2,7 +2,7 @@
   <div class="hotel">
       <div class="hotel-first">
  <div class="hotel-img">
-         <mt-swipe :auto="0" :show-indicators="false">
+         <mt-swipe :auto="0" :show-indicators="false" @change="handleChange">
                 <mt-swipe-item  v-for="(v,index) in position"  :key="index">
       <router-link to="/details" tag="div">
       <img :src="`https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg`" alt="">
@@ -17,10 +17,6 @@
       </div>
       </router-link>
   </mt-swipe-item>
-  <!-- <mt-swipe-item>2</mt-swipe-item>
-  <mt-swipe-item>3</mt-swipe-item>
-  <mt-swipe-item>4</mt-swipe-item>
-  <mt-swipe-item>5</mt-swipe-item> -->
 </mt-swipe>
       </div>
      
@@ -36,7 +32,8 @@
     export default {
         data:function(){
             return{
-                position:[]
+                position:[],
+                nam:1
             }
         },
         created(){
@@ -47,7 +44,9 @@
                 'getmzth',
                 'getwydd',
                 'getzsej',
-                'getzz'
+                'getzz',
+                'getnam'
+                
             ])
         },
         methods:{
@@ -59,7 +58,12 @@
             },
             menu(){
                 window.scrollTo(0,0)
-            }
+            },
+             handleChange(index){
+                 console.log(index)
+                 this.$store.commit('setnam',index)
+                //  console.log(this.getnam)
+             }
         },
         mounted(){
                  this.add()

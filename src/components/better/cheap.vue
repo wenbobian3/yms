@@ -5,7 +5,7 @@
         <div>
             <h3 class="cheap-h3">每周优惠民俗任君选</h3>
             <div class="cheap-span">
-            <h4 class="cheap-span-a">1</h4><h4 class="cheap-span-b"> / 5</h4>
+            <h4 class="cheap-span-a">{{nam}}</h4><h4 class="cheap-span-b"> / 5</h4>
             </div>
         </div>
       </div>
@@ -15,10 +15,26 @@
 
 <script>
 import hotel from './hotel.vue'
+import { mapGetters } from 'vuex';
     export default {
+        data:function(){
+            return {
+                nam:1
+            }
+        },
         components:{
             hotel
+        },
+        computed:{
+            ...mapGetters([
+                'getnam'
+            ]),
+            nam:function(){
+                console.log(this.getnam)
+               return  this.getnam
+            }
         }
+        
     }
 
 </script>

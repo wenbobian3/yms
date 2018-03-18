@@ -14,7 +14,8 @@ const store = new Vuex.Store({
             mzth: [],
             wydd: [],
             zsej: [],
-            zz: []
+            zz: [],
+            nam: 1
         },
 
         mutations: {
@@ -31,6 +32,9 @@ const store = new Vuex.Store({
             setzz(state, payload) {
                 state.zz = payload
 
+            },
+            setnam(state, payload) {
+                state.nam = payload
             }
 
         },
@@ -46,6 +50,9 @@ const store = new Vuex.Store({
             },
             getzz(state) {
                 return state.zz
+            },
+            getnam(state) {
+                return state.nam
             }
         }
         // ,
