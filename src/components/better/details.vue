@@ -19,35 +19,25 @@
   </div>
   <div class="mainn">
  <div class="details-banner">
-      <mt-swipe :show-indicators="false">
-        <mt-swipe-item>
-      <img src="../../../static/image/my1.png" alt="">
-        </mt-swipe-item>
-        <mt-swipe-item>
-      <img src="../../../static/image/my2.png" alt="">
-        </mt-swipe-item>
-        <mt-swipe-item>
-      <img src="../../../static/image/my3.png" alt="">            
-        </mt-swipe-item>
-                <mt-swipe-item>
-      <img src="../../../static/image/my4.png" alt="">            
+      <mt-swipe :show-indicators="false" @change="handleChange">
+        <mt-swipe-item v-for="(l,index) in item.dImgUrl" :key="index">
+      <img :src="`http://10.9.163.10:3000/uploads/${l}`" alt="">
         </mt-swipe-item>
         </mt-swipe>
-     <div class="details-a">1</div><div class="details-b">/4</div>
+     <div class="details-a">{{ind}}</div><div class="details-b">/ {{item.dImgUrl.length}}</div>
   </div>
   <div class="datails-wz">
-      <h2>春秋舍</h2>
+      <h2>{{item.name}}</h2>
       <div class="datails-right">
-      <div class="datails-dd ui-border">西安</div>
-      <div class="datails-fg ui-border">文艺范</div>
+      <div class="datails-dd ui-border">{{item.area}}</div>
+      <div class="datails-fg ui-border">{{item.style}}</div>
       </div>
-
   </div>
   <div class="datails-fx">
-      <h3 class="datails-fx-h3">体验旧建筑改造的民宿</h3>
-      <h4 class="datails-fx-h4">酒店是由废弃车间及苏联旧建筑酒店酒店是由废弃车间及苏联旧建筑酒店酒店是由废弃车间及苏联旧建筑酒店酒店是由废弃车间及苏联旧建筑酒店酒店是由废弃车间及苏联旧建筑酒店是由废弃车间及苏联旧建筑酒店是由废弃车间及苏联旧建筑酒店是由废弃车间及苏联旧建筑酒店是由废弃车间及苏联旧建筑酒店是由废弃车间及苏联旧建筑</h4>
+      <h3 class="datails-fx-h3">{{item.title}}</h3>
+      <h4 class="datails-fx-h4">{{item.describe}}</h4>
 
-    <information></information>
+    <information :item="item"></information>
   </div>
   </div>
  
@@ -55,14 +45,38 @@
 </template>
 <script>
 import information from './information.vue'
+    import axios from 'axios'
     export default {
+        props:['id'],
+        data(){
+            return {
+                item:{},
+                ind:1
+            }
+        },
         components:{
             information
         },
         methods:{
             show(){
                 this.$router.go(-1)
+            },
+            add(){
+                const that=this
+                console.log(this.id)
+                axios.get(`/api/position/items/${this.id}`)
+                 .then(function(res){
+                    // console.log(res.data.posts[0].data)
+    console.log(res.data)
+                    that.item = res.data 
+                 })
+            },
+            handleChange(index){
+                this.ind = index + 1
             }
+        },
+        mounted(){
+            this.add()
         }
     }
 </script>
