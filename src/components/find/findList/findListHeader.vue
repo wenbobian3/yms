@@ -1,22 +1,39 @@
 <template>
 	<div class="storyHeader">
-		<h2>故 事</h2>
+		<router-link to="/find" class="findBack">
+			<img src="../../../../static/image/story/titleback.png" alt="" >
+		</router-link>
+		<h2>房源列表</h2>
 		<div class="storySort">
 			<ul>
-				<li>
-					<span>默认</span>
-				</li>
-				<div class="storyBar"></div>
 				<li>
 					<span>
 						综合排序
 						<i>
-							<img src="../../../static/image/search_more_img.png" alt="">
+							<img src="../../../../static/image/lvbiao.png" alt="">
 						</i>
 					</span>
 					<ul>
-						<li class="ui-border-b">浏览 多-少</li>
-						<li>浏览 少-多</li>
+						<li>推荐排序</li>
+						<li>价格 低-高</li>
+						<li>价格 高-低</li>
+						<li>距离 近-远</li>
+						<li>距离 远-近</li>
+					</ul>
+				</li>
+				<div class="storyBar"></div>
+				<li>
+					<span>
+						标签
+						<i>
+							<img src="../../../../static/image/search_more_img.png" alt="">
+						</i>
+					</span>
+					<ul>
+						<li>文艺范</li>
+						<li>田园风</li>
+						<li>温暖系</li>
+						<li>轻奢派</li>
 					</ul>
 				</li>
 			</ul>
@@ -27,9 +44,21 @@
 
 <style lang="scss">
 	.storyHeader{
-		position: fixed;
 		width: 100%;
 		height: 0.98rem;
+		position: relative;
+		.findBack{
+			position: absolute;
+			display: flex;
+			width: 0.1rem;
+			height: 0.2rem;
+			left: 0.18rem;
+			top: 0.12rem;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
 		h2{
 			background-color: #fff;
 			width: 100%;
@@ -53,7 +82,6 @@
 					background-color: #f1f1f1;
 					width: 50%;
 					text-align: center;
-					border-bottom: 1px solid #dcdcdc;
 					span{
 						i{
 							display: inline-block;
@@ -66,28 +94,36 @@
 						}
 					}
 				}
-				li:first-child{
-					color: #7bb976;
-				}
-				li:last-child{
+				li{
 					position: relative;
 					ul{
 						position: absolute;
-						left: -100%;
 						width: 200%;
 						display: flex;
 						flex-direction: column;
-						display: none;
 						li{
 							width: 100%;
 							height: 0.4rem;
 							color: #000;
 							line-height: 0.4rem;
 							background-color: #fff;
+							text-align: left;
+							padding-left: 0.5rem;
 						}
 					}
 				}
-
+				li:first-child{
+					color: #7bb976;
+					ul{
+						display: none;
+					}
+				}
+				li:last-child{
+					ul{
+						left: -100%;
+						display: none;
+					}
+				}
 				.storyBar{
 					width: 1px;
 					height: 0.3rem;
