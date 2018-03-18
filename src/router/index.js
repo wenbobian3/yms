@@ -29,8 +29,9 @@ export default new Router({
             component: personal
         },
         {
-            path: '/details',
-            component: details
+            path: '/details/:id',
+            component: details,
+            props: true
         },
         {
             path: '/search',

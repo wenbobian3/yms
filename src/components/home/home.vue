@@ -49,14 +49,14 @@
          methods:{
             add(){
                 const that=this
-                axios.get('/api/posts')
+                axios.get('/api/position/qdzy')
                  .then(function(res){
+                    //  console.log(res)
                     that.$store.commit('setCount',res.data[0].data.mzth)
                     that.$store.commit('setWy',res.data[0].data.wydd)
                     that.$store.commit('setzs',res.data[0].data.zsej)
                     that.$store.commit('setzz',res.data[0].data)
                     that.position = that.getmzth
-                    
                     console.log(that.getzz)
                  })
             }

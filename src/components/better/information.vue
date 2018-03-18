@@ -1,32 +1,23 @@
 <template>
     <div class="datails-fj">
           <h3 class="datails-fx-h3-2">房型房价</h3>
-          <div  v-for="item in items">
+          <div  v-for="(l,index) in item.room">
               <mt-swipe :show-indicators="false">
-  <mt-swipe-item>
-          <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
-      
-  </mt-swipe-item>
-  <mt-swipe-item>
-          <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
-      
-  </mt-swipe-item>
-  <mt-swipe-item>
-          <img class="datails-fx-img" src="../../../static/image/bs1.png" alt="">
-      
+  <mt-swipe-item v-for="(v,inx) in l.houseImg">
+          <img class="datails-fx-img" :src="`http://10.9.163.10:3000/uploads/${v}`" alt="">
   </mt-swipe-item>
 </mt-swipe>
-          <h4 class="datails-fx-h4">房型：标准大床房</h4>
+          <h4 class="datails-fx-h4">房型：{{l.houselayout}}</h4>
           <div class="datails-jg">
               <div class="best">
- <h3 class="datails-jg-zz">价格：</h3><h3 class="datails-jg-qq">￥500 </h3><div class="datails-jg-bb"> / 平常</div><div class="datails-jg-qo">￥560</div><div class="datails-jg-bb" style="text-decoration:line-through;"> / 原价</div>
+ <h3 class="datails-jg-zz">价格：</h3><h3 class="datails-jg-qq">￥{{l.usual}} </h3><div class="datails-jg-bb"> / 平常</div><div class="datails-jg-qo">￥{{l.original}}</div><div class="datails-jg-bb" style="text-decoration:line-through;"> / 原价</div>
               </div>
  <div class="best-a">
- <div class="datails-jg-qq">￥560</div><div class="datails-jg-bb"> / 周末</div>
+ <div class="datails-jg-qq">￥{{l.weekend}}</div><div class="datails-jg-bb"> / 周末</div>
       </div>       
       <div class="best-b">
           <div class="best-c">
-    <div class="datails-jg-qq"  style="float:none">￥560</div><div class="datails-jg-bb"> / 节日</div>
+    <div class="datails-jg-qq"  style="float:none">￥{{l.holiday}}</div><div class="datails-jg-bb"> / 节日</div>
           </div>
    <span>立即订购</span>
       </div>
@@ -44,6 +35,7 @@
     import mapcli from './mapcli.vue'
     import subscribe from './subscribe.vue'
     export default {
+        props:['item'],
                 data(){
             return {
                 items:[
@@ -58,6 +50,9 @@
             comment,
             mapcli,
             subscribe
+        },
+        mounted(){
+            // console.log(this.item)
         }
     }
 </script>
