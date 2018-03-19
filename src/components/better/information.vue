@@ -3,7 +3,7 @@
           <h3 class="datails-fx-h3-2">房型房价</h3>
           <div  v-for="(l,index) in item.room">
               <mt-swipe :show-indicators="false">
-  <mt-swipe-item v-for="(v,inx) in l.houseImg">
+  <mt-swipe-item v-for="(v,inx) in l.houseImg" :key="inx">
           <img class="datails-fx-img" :src="`http://10.9.163.10:3000/uploads/${v}`" alt="">
   </mt-swipe-item>
 </mt-swipe>

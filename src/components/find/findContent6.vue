@@ -6,8 +6,10 @@
 		<div class="findContentArea">
 			<ul id  ="findContentArea">
 				<li v-for="item in items">
-					<img :src=item.imgUrl alt="">
-					<span>{{ item.area }}</span>
+					<router-link to="findList">	
+						<img :src=item.imgUrl alt="">
+						<span>{{ item.area }}</span>
+					</router-link>
 				</li>
 			</ul>
 		</div>

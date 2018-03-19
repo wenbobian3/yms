@@ -33,8 +33,7 @@
                 const that=this
                 axios.get('/api/position/qdzy')
                  .then(function(res){
-                    console.log(res.data.posts[0].data)
-                     
+                    console.log(res.data.posts[0].data.wydd)
                     that.$store.commit('setCount',res.data.posts[0].data.mzth)
                     that.$store.commit('setWy',res.data.posts[0].data.wydd)
                     that.$store.commit('setzs',res.data.posts[0].data.zsej)

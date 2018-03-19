@@ -17,7 +17,6 @@ const store = new Vuex.Store({
             zz: [],
             nam: 1
         },
-
         mutations: {
             setCount(state, payload) {
                 state.mzth = payload

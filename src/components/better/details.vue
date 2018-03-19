@@ -67,7 +67,7 @@ import information from './information.vue'
                 axios.get(`/api/position/items/${this.id}`)
                  .then(function(res){
                     // console.log(res.data.posts[0].data)
-    console.log(res.data)
+                        console.log(res)
                     that.item = res.data 
                  })
             },

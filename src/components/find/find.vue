@@ -13,7 +13,6 @@
   </div>
 </template>
 <script>
-
   import findHeader from './findHeader'
   import findContent from './findContent'
   import findContent2 from './findContent2'
@@ -59,7 +58,7 @@
         text-align: center;
         line-height: 0.3rem;
         background: #7ac278;
-        font-wight: 600;
+        font-weight: 600;
         color: #fff;
       }
     }
@@ -70,6 +69,7 @@
         padding: 0 0.15rem;
         li{
           width: 25%;
+          height: 0.96rem;
           margin: 0;
           display: flex;
           align-items: center;

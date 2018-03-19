@@ -3,8 +3,8 @@
       <div class="hotel-first">
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item  v-for="(v,index) in position"  :key="index" >
-      <router-link to="/details">
+                <mt-swipe-item  v-for="(v,index) in position"  :key="index">
+      <router-link :to="`/details/${v._id}`" tag="div" >
       <img :src="`http://10.9.163.10:3000/uploads/${v.imgUrl}`" alt="">
  <div class="hotel-span-a">
           <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
@@ -17,12 +17,14 @@
       </div>
       </router-link>
   </mt-swipe-item>
-
+  <!-- <mt-swipe-item>2</mt-swipe-item>
+  <mt-swipe-item>3</mt-swipe-item>
+  <mt-swipe-item>4</mt-swipe-item>
+  <mt-swipe-item>5</mt-swipe-item> -->
 </mt-swipe>
       </div>
      
       </div>
-     
   </div>
 </template>
 

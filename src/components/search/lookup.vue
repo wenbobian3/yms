@@ -8,18 +8,47 @@
 </mt-search> -->
 <div>
   <mt-button icon="back" class="back" @click="show"></mt-button>
-<mt-search cancel-text="取消"placeholder="搜索民宿名称"> </mt-search>
+<mt-search cancel-text="取消"placeholder="搜索民宿名称"  :value="sear" v-on:input="search">
+        <mt-cell
+        v-for="(item,index) in result"
+        :title="item.name"
+        :value="item.area"  placeholder="搜索" :key="index">
+    </mt-cell>
+     </mt-search>
 </div>
 
 
 </template>
 <script>
+    import axios from 'axios'
     export default {
+        data(){
+            return {
+                result:[],
+                sear:''
+            }
+        },
         methods:{
             show(){
                 this.$router.go(-1)
+            },
+            search(){
+                const that = this
+                 axios({
+                      method: 'post',
+                        url: '/api/position/qdsearch',
+                        data: {
+                            keyword: this.sear
+                        }
+                 })
+                 .then(function(res){
+                     console.log(res)
+                     that.result = res.data
+                     
+                 })
             }
-        }
+        },
+        
     }
 </script>
 <style>

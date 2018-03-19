@@ -3,8 +3,8 @@
       <div class="hotel-first">
  <div class="hotel-img">
          <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item  v-for="(v,index) in position"  :key="index" >
-      <router-link to="/details">
+                <mt-swipe-item  v-for="(v,index) in position"  :key="index">
+      <router-link :to="`/details/${v._id}`" tag="div" >
       <img :src="`http://10.9.163.10:3000/uploads/${v.imgUrl}`" alt="">
  <div class="hotel-span-a">
           <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
@@ -15,15 +15,12 @@
            <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
-      
       </router-link>
   </mt-swipe-item>
-
 </mt-swipe>
       </div>
      
       </div>
-     
   </div>
 </template>
 
@@ -35,7 +32,8 @@
     export default {
         data(){
             return {
-                position:[]
+                position:[],
+                nam:1
             }
         },
         computed:{
@@ -57,6 +55,7 @@
                     // that.$store.commit('setzz',res.data[0].data)
                     setTimeout(function(){
                     that.position = that.getwydd
+                    console.log(that.position)
                     },400)
               
                     
