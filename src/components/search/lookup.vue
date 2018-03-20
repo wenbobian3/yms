@@ -1,11 +1,4 @@
 <template>
-    <!-- <mt-search v-model="value">
-    <mt-cell
-        v-for="item in result"
-        :title="item.title"
-        :value="item.value"  placeholder="搜索">
-    </mt-cell>
-</mt-search> -->
 <div>
   <mt-button icon="back" class="back" @click="show"></mt-button>
 <mt-search cancel-text="取消"placeholder="搜索民宿名称"  :value="sear" v-on:input="search">
