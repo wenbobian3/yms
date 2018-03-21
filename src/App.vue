@@ -15,7 +15,6 @@ export default {
     home
   }
 }
-
 </script>
 
 <style>

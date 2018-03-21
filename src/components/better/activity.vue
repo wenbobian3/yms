@@ -1,7 +1,13 @@
 <template>
   <div class="activity">
       <h1><img src="../../../static/image/logo.png" alt=""></h1>
-      <div class="activity-div">欢迎138****3602成为你们宿舍的第1名用户，获赠20枚逸金币奖励</div>
+      <mt-swipe>
+  <mt-swipe-item>
+      <div class="activity-div">欢迎138****3602成为你们</div>      
+      <div class="activity-div">欢迎138****3602成为你们</div>      
+  </mt-swipe-item>
+
+</mt-swipe>
   </div>
 </template>
 <style lang="scss">
@@ -21,11 +27,11 @@
         }
     }
     .activity-div{
-        overflow: hidden;
+        // overflow: hidden;
         width:3rem;
         font-size:0.21rem;
         height:100%;
-        float:right;
+        float:left;
     }
 
 }

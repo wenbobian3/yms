@@ -2,55 +2,91 @@
   <div class="hotel">
       <div class="hotel-first">
  <div class="hotel-img">
-         <mt-swipe :auto="0" :show-indicators="false">
-  <mt-swipe-item>
-      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521085329981&di=ffa8251cd53fba5b4348df3c449e568f&imgtype=0&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20170115%2F4370041484410678.jpg" alt="">
+         <mt-swipe :auto="0" :show-indicators="false" @change="handleChange">
+                <mt-swipe-item  v-for="(v,index) in position"  :key="index">
+      <router-link :to="`/details/${v._id}`" tag="div" >
+      <img :src="`http://10.9.163.10:3000/uploads/${v.imgUrl}`" alt="">
  <div class="hotel-span-a">
-          <h3>￥</h3><h3>530</h3><h4>起</h4>
+          <h3>￥</h3><h3>{{v.price}}</h3><h4>起</h4>
       </div>
       <div class="hotel-span-b">
-          <h3>春秋舍</h3>
+          <h3>{{v.name}}</h3>
           <div class="hotel-div">
-           <h3 class="hotel-h3-a">西安</h3> <h3 class="hotel-h3-b">文艺社</h3>
+           <h3 class="hotel-h3-a">{{v.area}}</h3> <h3 class="hotel-h3-b">{{v.style}}</h3>
           </div>
       </div>
-
+      </router-link>
   </mt-swipe-item>
-  <mt-swipe-item>2</mt-swipe-item>
-  <mt-swipe-item>3</mt-swipe-item>
-  <mt-swipe-item>4</mt-swipe-item>
-  <mt-swipe-item>5</mt-swipe-item>
 </mt-swipe>
       </div>
      
       </div>
-     
   </div>
 </template>
+
+<script>
+
+    import axios from 'axios'
+    // import vuex from 'vuex'
+    import {mapGetters} from 'vuex'
+    export default {
+        data:function(){
+            return{
+                position:[],
+                nam:1
+            }
+        },
+        created(){
+            this.menu()
+        },
+        computed:{
+            ...mapGetters([
+                'getmzth',
+                'getwydd',
+                'getzsej',
+                'getzz',
+                'getnam'
+                
+            ])
+        },
+        methods:{
+            add(){
+                const that=this
+                    setTimeout(function(){
+                    that.position = that.getmzth
+                    },500)
+            },
+            menu(){
+                window.scrollTo(0,0)
+            },
+             handleChange(index){
+                 console.log(index)
+                 this.$store.commit('setnam',index)
+                //  console.log(this.getnam)
+             }
+        },
+        mounted(){
+                 this.add()
+        }
+    }
+
+</script> 
+
 <style lang="scss">
 .hotel{
     height:2.3rem;
     .hotel-first{
-        width:2.84rem;
+        width:99%;
     }
     .hotel-img{
-        width:2.84rem;
+        width:99%;
     height:2.3rem;
         // height:1.65rem;
         border:0.02rem solid rgb(180, 215, 231);
         img{
             height:1.65rem;
-            width:2.84rem;
+            width:99%;
         }
-        // .mint-swipe{
-        //     overflow: visible;
-        //     .mint-swipe-items-wrap{
-        //         overflow: visible;
-        //         .mint-swipe-item{
-        //             display: block;
-        //         }
-        //     }
-        // }
     }
     .hotel-span-a{
         display: flex;

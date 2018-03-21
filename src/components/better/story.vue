@@ -10,13 +10,48 @@
   </div>
 </template>
 <script>
-    import storys from './storys.vue'
+    import storys from './storys'
+    import axios from 'axios'
+    import vuex from 'vuex'
+    import {mapGetters} from 'vuex'
     export default {
+        data(){
+            return {
+                position:[]
+            }
+        },
+        computed:{
+            ...mapGetters([
+                'getmzth',
+                'getwydd',
+                'getzsej',
+                'getzz'
+            ])
+        },
+        methods:{
+            add(){
+                const that=this
+                axios.get('/api/position/qdzy')
+                 .then(function(res){
+                    console.log(res.data.posts[0].data.wydd)
+                    that.$store.commit('setCount',res.data.posts[0].data.mzth)
+                    that.$store.commit('setWy',res.data.posts[0].data.wydd)
+                    that.$store.commit('setzs',res.data.posts[0].data.zsej)
+                    that.$store.commit('setzz',res.data.posts[0].data)
+                    // console.log(that.getzz)
+                    that.position = that.getmzth
+                 })
+            }
+        },
+        mounted(){
+                 this.add()
+        },
         components:{
             storys
         }
     }
-</script>
+
+</script> 
 <style  lang="scss">
 
  .story-boss{

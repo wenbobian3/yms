@@ -5,12 +5,12 @@
         </div>
 		<div class="findContentArea">
 			<ul id  ="findContentArea">
-				<router-link to="findList">	
-					<li v-for="item in items">
+				<li v-for="item in items">
+					<router-link to="findList">	
 						<img :src=item.imgUrl alt="">
 						<span>{{ item.area }}</span>
-					</li>
-				</router-link>
+					</router-link>
+				</li>
 			</ul>
 		</div>
 	</div>
