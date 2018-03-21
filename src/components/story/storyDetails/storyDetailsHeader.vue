@@ -2,11 +2,11 @@
 	<div class="storyDetailsHeader">
 		
 		<ul>
-				<router-link to="/story" class="storyBack">
-					<img src="../../../../static/image/story/titleback.png" alt="" >
-				</router-link>
-				<h2>故事详情</h2>
-				<img src="../../../../static/image/story/minsu_detail_share.png" alt="" class="storyShare">
+			<router-link to="/story" class="storyBack">
+				<img src="../../../../static/image/story/titleback.png" alt="" >
+			</router-link>
+			<h2>故事详情</h2>
+			<img src="../../../../static/image/story/minsu_detail_share.png" alt="" class="storyShare">
 		</ul>
 
 

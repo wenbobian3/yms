@@ -21,5 +21,6 @@
  .personalMain{
   height:100%;
   background:#f1f1f1;
+  text-align: left;
  }
 </style>

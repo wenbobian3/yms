@@ -59,14 +59,14 @@
             menu(){
                 window.scrollTo(0,0)
             },
-             handleChange(index){
+            handleChange(index){
                  console.log(index)
                  this.$store.commit('setnam',index)
                 //  console.log(this.getnam)
-             }
+            }
         },
         mounted(){
-                 this.add()
+            this.add()
         }
     }
 

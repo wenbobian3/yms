@@ -11,6 +11,7 @@ import lookup from '../components/search/lookup.vue'
 
 import storyDetails from '../components/story/storyDetails/storyDetails.vue'
 import findList from '../components/find/findList/findList.vue'
+import order from '../components/order/order.vue'
 
 
 Vue.use(Router)
@@ -40,7 +41,7 @@ export default new Router({
         {
             path: '/details/:id',
             component: details,
-            props: true
+            props: true,
         },
         {
             path: '/search',
@@ -54,7 +55,10 @@ export default new Router({
         {
             path: '/findList',
             component: findList
-
+        },
+        {
+            path: '/order',
+            component: order
         }
     ]
 })

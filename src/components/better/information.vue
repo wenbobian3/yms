@@ -19,7 +19,9 @@
           <div class="best-c">
     <div class="datails-jg-qq"  style="float:none">￥{{l.holiday}}</div><div class="datails-jg-bb"> / 节日</div>
           </div>
-   <span>立即订购</span>
+          <router-link to="order">
+            <span>立即订购</span>
+          </router-link>
       </div>
           </div>
           </div>
@@ -176,6 +178,7 @@
                 color:#ccc;
             }
             span{
+                display: inline-block;
                 height:0.25rem;
                 background:#fb6914;
                 font-size:0.15rem;

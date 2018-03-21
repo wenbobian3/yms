@@ -44,10 +44,11 @@
 		.article{
 			padding: 0.08rem 0.33rem 0 0.19rem;
 			h2{
+				color: #000;
 				text-align: left;
-				font-size: 0.14rem;
+				font-size: 0.16rem;
 				line-height: 0.23rem;
-				letter-spacing: 0.015rem;
+				letter-spacing: 0.01rem;
 			}
 			p{
 				text-align: left;
@@ -59,11 +60,17 @@
 			}
 		}
 		.details{
-			text-align: right;
-			letter-spacing: 0.05rem;
-			font-size: 0.14rem;
-			line-height: 0.14rem;
-			margin: 0.1rem 0.21rem 0.08rem 0;
+			display: flex;
+			justify-content: flex-end;
+			span{
+				color: #000;
+				text-align: right;
+				letter-spacing: 0.05rem;
+				font-size: 0.14rem;
+				line-height: 0.14rem;
+				margin: 0.1rem 0.21rem 0.08rem 0;
+			}
+			
 		}
 		.storyBar{
 			width: 100%;
