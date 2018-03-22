@@ -72,9 +72,16 @@
           height: 0.96rem;
           margin: 0;
           display: flex;
-          align-items: center;
-          flex-direction: column;
+         
           margin-top: 0.16rem;
+          a{
+            color: #000;
+            
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;
+          }
           img{
             width: 0.76rem;
             height: 0.76rem;
@@ -82,6 +89,7 @@
           span{
             font-size: 0.14rem;
             margin-top: 0.05rem;
+            text-align: center;
           }
         }
       }

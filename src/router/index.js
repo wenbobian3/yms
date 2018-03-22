@@ -5,12 +5,14 @@ import anmimte from '../components/home/anmimte.vue'
 import find from '../components/find/find.vue'
 import story from '../components/story/story.vue'
 import personal from '../components/personal/personal.vue'
-
 import details from '../components/better/details.vue'
 import lookup from '../components/search/lookup.vue'
-
 import storyDetails from '../components/story/storyDetails/storyDetails.vue'
 import findList from '../components/find/findList/findList.vue'
+import order from '../components/order/order.vue'
+import addPerson from '../components/order/addPerson/addPerson.vue'
+import newPerson from '../components/order/addPerson/newPerson/newPerson.vue'
+
 
 
 Vue.use(Router)
@@ -40,7 +42,7 @@ export default new Router({
         {
             path: '/details/:id',
             component: details,
-            props: true
+            props: true,
         },
         {
             path: '/search',
@@ -54,7 +56,19 @@ export default new Router({
         {
             path: '/findList',
             component: findList
-
+        },
+        {
+            path: '/order/:id',
+            component: order,
+            props:true
+        },
+        {
+            path: '/addPerson',
+            component: addPerson
+        },
+        {
+            path: '/newPerson',
+            component: newPerson
         }
     ]
 })

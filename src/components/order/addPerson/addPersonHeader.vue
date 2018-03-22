@@ -1,33 +1,29 @@
+
 <template>
-	<div class="storyDetailsHeader">
-		
+	<div class="addPersonHeader">
 		<ul>
-			<router-link to="/story" class="storyBack">
+			<router-link to="/order" class="orderBack">
 				<img src="../../../../static/image/story/titleback.png" alt="" >
 			</router-link>
-			<h2>故事详情</h2>
-			<img src="../../../../static/image/story/minsu_detail_share.png" alt="" class="storyShare">
+			<h2>添加入住人</h2>
+			<h3>确定</h3>
 		</ul>
-
-
 	</div>
-
-
 </template>
 
 
 <style lang="scss">
-	.storyDetailsHeader{
-		border-bottom: 1px solid #e4e4e4;
+	.addPersonHeader{
+		background: #fff;
 		ul{
 			display: flex;
 			padding: 0 0.16rem;
 			justify-content: space-between;
 			align-items: center;
 			height: 0.49rem;
-			.storyBack{
+			.orderBack{
 				display: flex;
-				width: 0.1rem;
+				width: 0.32rem;
 				height: 0.19rem;
 				img{
 					width: 0.1rem;
@@ -37,13 +33,21 @@
 			h2{
 				font-size: 0.18rem;
 			}
-			.storyShare{
-				width: 0.18rem;
+			h3{
 				height: 0.18rem;
-				
+				color: #81ae8f;
+				font-size: .15rem;
 			}
 		}
+		
 	}
 	
 
 </style>
+
+
+
+</template>
+
+
+

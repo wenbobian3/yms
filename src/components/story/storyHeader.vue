@@ -4,17 +4,17 @@
 		<div class="storySort">
 			<ul>
 				<li>
-					<span>默认</span>
+					<span @click="show">默认</span>
 				</li>
 				<div class="storyBar"></div>
 				<li>
-					<span>
+					<span @click="show2">
 						综合排序
 						<i>
 							<img src="../../../static/image/search_more_img.png" alt="">
 						</i>
 					</span>
-					<ul>
+					<ul v-if="male2">
 						<li class="ui-border-b">浏览 多-少</li>
 						<li>浏览 少-多</li>
 					</ul>
@@ -24,6 +24,31 @@
 	</div>
 </template>
 
+<script>
+	
+	export default {
+		data(){
+			return{
+				male: false,
+				male2:false
+			}
+		},
+		methods:{
+			show(){
+				console.log(1)
+				this.male = !this.male
+				this.male2 = false
+				
+			},
+			show2(){
+				console.log(2)
+				this.male2 = !this.male2
+				this.male = false
+				
+			}
+		}
+	}
+</script>
 
 <style lang="scss">
 	.storyHeader{
@@ -77,7 +102,7 @@
 						width: 200%;
 						display: flex;
 						flex-direction: column;
-						display: none;
+						// display: none;
 						li{
 							width: 100%;
 							height: 0.4rem;

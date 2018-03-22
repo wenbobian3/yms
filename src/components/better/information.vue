@@ -1,7 +1,7 @@
 <template>
     <div class="datails-fj">
           <h3 class="datails-fx-h3-2">房型房价</h3>
-          <div  v-for="(l,index) in item.room">
+          <div  v-for="(l,index) in item.room" :key="item._id">
               <mt-swipe :show-indicators="false">
   <mt-swipe-item v-for="(v,inx) in l.houseImg" :key="inx">
           <img class="datails-fx-img" :src="`http://10.9.163.10:3000/uploads/${v}`" alt="">
@@ -19,7 +19,10 @@
           <div class="best-c">
     <div class="datails-jg-qq"  style="float:none">￥{{l.holiday}}</div><div class="datails-jg-bb"> / 节日</div>
           </div>
-   <span>立即订购</span>
+          <!-- <router-link to="order"> -->
+<router-link :to="`/order/${l._id}`"  :id="l._id">立即订购</router-link>
+            <!-- <span @click="showto" :id="l._id">立即订购</span> -->
+          </router-link>
       </div>
           </div>
           </div>
@@ -52,7 +55,13 @@
             subscribe
         },
         mounted(){
-            // console.log(this.item)
+            console.log(this.item)
+        },
+        methods:{
+            showto(){
+                
+                console.log(this.id)
+            }
         }
     }
 </script>
@@ -176,6 +185,7 @@
                 color:#ccc;
             }
             span{
+                display: inline-block;
                 height:0.25rem;
                 background:#fb6914;
                 font-size:0.15rem;

@@ -1,8 +1,11 @@
 <template>
   <div class="story">
       <storyHeader></storyHeader>
-      <storyContent class="storyContentFirst"></storyContent>
-      <storyContent class="storyContentLast"></storyContent>
+      <main>
+        <storyContent class="storyContentFirst"></storyContent>
+        <storyContent class="storyContentLast"></storyContent>
+      </main>
+      
       <footerComponent></footerComponent>
   </div>
 </template>
@@ -15,8 +18,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    .storyContentFirst{
-      margin-top: 0.98rem;
+    main{
+      flex: 1;
+      overflow: auto;
     }
     .storyContentLast{
       margin-bottom: 0.51rem;

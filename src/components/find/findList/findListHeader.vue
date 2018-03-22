@@ -6,14 +6,14 @@
 		<h2>房源列表</h2>
 		<div class="storySort">
 			<ul>
-				<li>
-					<span>
+				<li >
+					<span @click="show">
 						综合排序
 						<i>
 							<img src="../../../../static/image/lvbiao.png" alt="">
 						</i>
 					</span>
-					<ul>
+					<ul  v-if="male">
 						<li>推荐排序</li>
 						<li>价格 低-高</li>
 						<li>价格 高-低</li>
@@ -23,13 +23,13 @@
 				</li>
 				<div class="storyBar"></div>
 				<li>
-					<span>
+					<span  @click="show2">
 						标签
 						<i>
 							<img src="../../../../static/image/search_more_img.png" alt="">
 						</i>
 					</span>
-					<ul>
+					<ul  v-if="male2">
 						<li>文艺范</li>
 						<li>田园风</li>
 						<li>温暖系</li>
@@ -41,6 +41,31 @@
 	</div>
 </template>
 
+<script>
+	
+	export default {
+		data(){
+			return{
+				male: false,
+				male2:false
+			}
+		},
+		methods:{
+			show(){
+				console.log(1)
+				this.male = !this.male
+				this.male2 = false
+				
+			},
+			show2(){
+				console.log(2)
+				this.male2 = !this.male2
+				this.male = false
+				
+			}
+		}
+	}
+</script>
 
 <style lang="scss">
 	.storyHeader{
@@ -115,13 +140,13 @@
 				li:first-child{
 					color: #7bb976;
 					ul{
-						display: none;
+						// display: none;
 					}
 				}
 				li:last-child{
 					ul{
 						left: -100%;
-						display: none;
+						// display: none;
 					}
 				}
 				.storyBar{
