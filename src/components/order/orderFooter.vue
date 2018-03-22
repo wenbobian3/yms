@@ -16,14 +16,25 @@
 	.orderFooter{
 		height: 0.5rem;
 	    display: flex;
+	    justify-content: space-between;
 		.orderPrice{
+			width: 2.25rem;
 			h2{
 				font-size: .14rem;
+				text-align: center;
+				line-height: .5rem;
 			}
 		}
 		.orderSubmit{
+			flex: 1;
+			display: flex;
+	 	    justify-content: center;
+			background: #7ac278;
 			span{
+				color: #fff;
 				font-size: .14rem;
+				text-align: center;
+				line-height: .5rem;
 			}
 		}
 	}

@@ -12,7 +12,7 @@
 <style lang="scss">
 	.orderHeader{
 		width: 100%;
-		height: 0.98rem;
+		height: 0.49rem;
 		position: relative;
 		.findBack{
 			position: absolute;
