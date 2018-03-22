@@ -1,8 +1,11 @@
 <template>
-  <div class="personalMain">
+
+    <div class="personalMain">
       <personalHeader1></personalHeader1>
       <personalSetting></personalSetting>
-      <footerComponent></footerComponent>
+  
+      
+    <footerComponent></footerComponent>
   </div>
 </template>
 <script>
@@ -18,8 +21,12 @@
   }
 </script>
 <style lang="scss">
- .personalMain{
-  height:100%;
-  background:#f1f1f1;
- }
+
+  
+    .personalMain{
+      height:100%;
+      background:#f1f1f1;
+     }
+
+ 
 </style>
