@@ -20,7 +20,7 @@
     <div class="datails-jg-qq"  style="float:none">￥{{l.holiday}}</div><div class="datails-jg-bb"> / 节日</div>
           </div>
           <!-- <router-link to="order"> -->
-<router-link to="/order"  :id="l._id">立即订购</router-link>
+<router-link :to="`/order/${l._id}`"  :id="l._id">立即订购</router-link>
             <!-- <span @click="showto" :id="l._id">立即订购</span> -->
           </router-link>
       </div>

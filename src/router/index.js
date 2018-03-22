@@ -57,9 +57,9 @@ export default new Router({
             component: findList
         },
         {
-            path: '/order',
+            path: '/order/:id',
             component: order,
-            name:'order'
+            props:true
         }
     ]
 })
