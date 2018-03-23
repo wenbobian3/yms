@@ -3,12 +3,13 @@
     <div class="xinfeng">
       <img  src="../../../static/image/personal/xinfeng.png" alt="">
     </div>
-     <div class="tx">
-       <img class="txtp" src="../../../static/image/personal/def_touxiang.png"  alt="">
+     <div class="tx" >
+       <img class="txtp" @click="onclick" src="../../../static/image/personal/def_touxiang.png"  alt="">
        <img class="txbj" src="../../../static/image/personal/qianbibi.png" alt="">
      </div>
      <div class="sign">
         <a href="###">登录</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<a href="###">注册</a>
+        <signup v-show="dialogConfigVisible"  @listenToConfig="changeConfigVisible"></signup>
      </div>
      <ul class="scjb">
        <li class="sc">我的收藏</li>
@@ -28,13 +29,36 @@
            <span>我的订单</span>
            <img class="rightback" src="../../../static/image/personal/rightback.png" alt="">
          </div>
+         
+
 
       </div>
   </div>
-  
+
+
 </template>
 <script>
- 
+    import signup from './signup.vue'
+    import signin from './signin.vue'
+
+    export default {
+      data:function(){
+        return {
+         dialogConfigVisible:false
+        }
+      },
+      components:{
+       signup
+      },
+      methods:{
+        onclick(){
+           this.dialogConfigVisible=true
+        },
+        changeConfigVisible(flag) {
+         this.dialogConfigVisible = flag;
+        }
+      }
+    }
 </script>
 
 <style lang="scss">
