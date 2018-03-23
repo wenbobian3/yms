@@ -23,9 +23,11 @@
          <img class="rightback" src="../../../static/image/personal/rightback.png" alt="">
        </div>
 
-         <div class="wddd" style="display:none">
+         <div class="wddd" style="display:flex">
           <img class="dd" src="../../../static/image/personal/dingdan.png"  alt="">
-           <span>我的订单</span>
+           <router-link to="myOrder"> 
+             <span>我的订单</span>
+           </router-link>
            <img class="rightback" src="../../../static/image/personal/rightback.png" alt="">
          </div>
 

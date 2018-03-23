@@ -9,19 +9,19 @@
 				<li>
 					<p>
 						<span>真实姓名：</span>
-						<i>请输入证件上的真实姓名</i>
+						<input type="" name="" value="请输入证件上的真实姓名">
 					</p>
 				</li>
 				<li>
 					<p>
 						<span>证件号码：</span>
-						<i>请输入证件号码</i>
+						<input type="" name="" value="请输入证件号码">
 					</p>
 				</li>
 				<li>
 					<p>
 						<span>手机号码：</span>
-						<i>请输入手机号码</i>
+						<input type="" name="" value="请输入手机号码">
 					</p>
 				</li>
 			</ul>
@@ -51,10 +51,14 @@
 					font-size: .15rem;
 					border-bottom: solid 1px #f1f1f1;
 					p{
-						padding: .15rem .1rem;
-						i{
+						padding: .1rem .1rem;
+						height: .25rem;
+						display: flex;
+						align-items: center;
+						input{
 							font-style: normal;
 							color: #cfcfcf;
+							height: .25rem;
 						}
 					}
 				}

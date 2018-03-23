@@ -13,6 +13,8 @@ import order from '../components/order/order.vue'
 import addPerson from '../components/order/addPerson/addPerson.vue'
 import newPerson from '../components/order/addPerson/newPerson/newPerson.vue'
 
+import myOrder from '../components/personal/myOrder/myOrder.vue'
+
 
 
 Vue.use(Router)
@@ -68,6 +70,11 @@ export default new Router({
         {
             path: '/newPerson',
             component: newPerson
+        },
+        ,
+        {
+            path: '/myOrder',
+            component: myOrder
         }
     ]
 })
