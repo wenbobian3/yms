@@ -7,9 +7,9 @@
 			<div class="orderContentHotel_c">
 				<img src="../../../static/image/story/1.png" alt="">
 				<p>
-					<span>客房</span>
+					<span>{{message.houselayout}}</span>
 					<span>
-						<i>￥680</i>
+						<i>￥{{message.original}}</i>
 						<em>(平常)</em>
 					</span>
 				</p>
@@ -73,6 +73,35 @@
 
 
 </template>
+
+
+<script>
+import axios from 'axios'
+	export default {
+		data(){
+			return{
+				message:{}
+			}
+		},
+		methods:{
+			add(){
+				const that = this;
+				axios({
+					url:`/api/position/room/${this.message}`
+				})
+				.then((res) => {
+					that.message = res.data
+					console.log(that.message)
+				})
+			}
+		},
+		mounted(){
+			this.message = this.$router.history.current.params.id
+			console.log(this.$router.history.current.params.id)
+			this.add()
+		}
+	}
+</script>
 
 <style lang="scss">
 	.orderContent{

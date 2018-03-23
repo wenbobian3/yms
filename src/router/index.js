@@ -60,8 +60,9 @@ export default new Router({
             component: findList
         },
         {
-            path: '/order',
-            component: order
+            path: '/order/:id',
+            component: order,
+            props:true
         },
         {
             path: '/addPerson',
